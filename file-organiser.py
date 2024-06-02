@@ -39,9 +39,11 @@ for filename in os.listdir(directory):
         if extension in extensions:
             folder_name  = extensions[extension]
 
+            # Creates the folder if it doesn't exist
             folder_path = os.path.join(directory, folder_name)
             os.makedirs(folder_path, exist_ok=True)
 
+            # Move the file to the folder
             destination_path = os.path.join(folder_path, filename)
             shutil.move(file_path, destination_path)
 
@@ -52,4 +54,3 @@ for filename in os.listdir(directory):
         print(f"Skipping: {filename}. It is a directory")
 
 print("Done: Files have been organized.")
-    
