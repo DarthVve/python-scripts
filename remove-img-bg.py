@@ -3,8 +3,8 @@ from PIL import Image
 
 import os
 
-input_path = os.path.join(os.path.expanduser('~'), 'OneDrive/Pictures/TOG07591.jpg')
-output_path = os.path.join(os.path.expanduser('~'), 'Desktop/selfie-no-bg.png')
+input_path = os.path.join(os.path.expanduser('~'), 'OneDrive/Documents/OBIALO CHIDINMA JOY/Dr Dinm - Signature.jpg')
+output_path = os.path.join(os.path.expanduser('~'), 'OneDrive/Documents/OBIALO CHIDINMA JOY/Dr Dinm - SignatureNoBg.png')
 
 def remove_background(input_path, output_path):
     try:

@@ -4,7 +4,7 @@ import time
 import threading
 
 # Scribble motion duration in seconds (30 minutes = 1800 seconds)
-duration = 30 * 60
+duration = 20 * 60
 end_time = time.time() + duration
 stop_script = False
 
@@ -32,7 +32,7 @@ while time.time() < end_time and not stop_script:
     pyautogui.moveTo(x, y, duration=0.1)
 
     # Add a short sleep to make the motion more human-like
-    time.sleep(0.1)
+    time.sleep(0.5)
 
 if stop_script:
     print("Scribble motion stopped by user!")
